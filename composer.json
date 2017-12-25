@@ -1,0 +1,13 @@
+{
+    "name": "auction/auction",
+    "require": {
+        "phpmailer/phpmailer": "~6.0",
+        "paypal/rest-api-sdk-php": "^1.13",
+        "nesbot/carbon": "^1.22"
+    },
+    "autoload": {
+        "files": [
+            "helpers.php"
+        ]
+    }
+}

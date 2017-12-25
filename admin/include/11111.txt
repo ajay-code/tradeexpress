@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<meta charset="utf-8">
+<title>Alliance - A Responsive Bootstrap 3 Admin Dashboard Template</title>
+<meta name="keywords" content="HTML5, Bootstrap 3, Admin Template, UI Theme"/>
+<meta name="description" content="Alliance - A Responsive HTML5 Admin UI Framework">
+<meta name="author" content="ThemeREX">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+ 
+<link rel="stylesheet" type="text/css" href="assets/fonts/icomoon/icomoon.css">
+ 
+<link rel="stylesheet" type="text/css" href="assets/js/plugins/fullcalendar/fullcalendar.min.css">
+<link rel="stylesheet" type="text/css" href="assets/js/plugins/magnific/magnific-popup.css">
+ 
+<link rel="stylesheet" type="text/css" href="assets/js/plugins/c3charts/c3.min.css">
+ 
+<link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/theme.css">
+ 
+<link rel="stylesheet" type="text/css" href="assets/allcp/forms/css/forms.css">
+ 
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<script type='text/javascript' src='js/jquery-1.6.2.min.js'></script>
+
+</head>
+<body class="dashboard-page">
+ 
+
+ 
+ 
+<div id="main">
+
+<!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript">
+function general_item_listing(){
+	window.location="general_item_listing.php";
+}
+function hotel_confirm(){
+	window.location="confirm_hotel.php";
+}
+function property_listing(){
+	window.location="property_listing.php";
+}
+function go_to_home(){
+	window.location="index.php";
+}
+function job_listing(){
+	window.location="job_listing.php";
+}
+function car_listing(){
+	window.location="car_motorcycle_listing.php";
+}
+
+</script> 
+<header class="navbar navbar-fixed-top bg-dark">
+<div class="navbar-logo-wrapper">
+<a class="navbar-logo-text" href="index.php">
+<b>Admin Panel</b>
+</a>
+<span id="sidebar_left_toggle" class="ad ad-lines"></span>
+</div>
+<ul class="nav navbar-nav navbar-left">
+<li class="dropdown dropdown-fuse hidden-xs">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><font color="green">Quick Link</font>
+<span class="fa fa-chevron-down"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+
+
+<li><a href="add_general_item.php">Add General Item</a></li>
+<li><a href="add_property.php">Add Property</a></li>
+<li><a href="add_job.php">Add Job</a></li>
+<li><a href="add_car_motorcycle.php">Add Car, MOtorcycle & Boats</a></li>
+
+<!-- <li><a href="add_gift.php">Add Gift</a></li> -->
+</ul>
+</li>
+<li class="hidden-xs">
+<a class="navbar-fullscreen toggle-active" href="#">
+<span class="glyphicon glyphicon-fullscreen"></span>
+</a>
+</li>
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+<li class="hidden-xs">
+<div class="navbar-btn btn-group">
+<button  class="btn dropdown-toggle" onclick="go_to_home();" title="Dashboard">
+<span class="fa fa-home fs20 text-info"></span>
+</button>
+</div>
+</li>
+
+<li class="dropdown dropdown-fuse">
+<div class="navbar-btn btn-group">
+<button  class="btn dropdown-toggle" onclick="general_item_listing();" title="General Item Listing">
+
+<span class="fa fa-list fs20 text-info"></span>
+</button>
+</div>
+</li>
+
+<li class="dropdown dropdown-fuse">
+<div class="navbar-btn btn-group">
+<button  class="btn dropdown-toggle" onclick="property_listing();" title="Property Listing">
+
+<span class="fa fa-list fs20 text-info"></span>
+</button>
+</div>
+</li>
+<li class="dropdown dropdown-fuse">
+<div class="navbar-btn btn-group">
+<button  class="btn dropdown-toggle" onclick="job_listing();" title="Job Listing">
+
+<span class="fa fa-list fs20 text-info"></span>
+</button>
+</div>
+</li>
+<li class="dropdown dropdown-fuse">
+<div class="navbar-btn btn-group">
+<button  class="btn dropdown-toggle" onclick="car_listing();" title="Car Listing">
+
+<span class="fa fa-list fs20 text-info"></span>
+</button>
+</div>
+</li>
+
+<li class="dropdown dropdown-fuse">
+<a href="#" class="dropdown-toggle fw600" data-toggle="dropdown">
+<span class="hidden-xs"><name> <?php echo $admin_details[0]["full_name"];  ?> </name> </span>
+<span class="fa fa-caret-down hidden-xs mr15"></span>
+<img src="admin_image/<?php echo $admin_details[0]["image"]; ?>" alt="avatar" class="mw55">
+</a>
+<ul class="dropdown-menu list-group keep-dropdown w250" role="menu">
+
+<li class="dropdown-footer text-center">
+<a href="Logout.php" class="btn btn-primary btn-sm btn-bordered">
+<span class="fa fa-power-off pr5"></span> Logout </a>
+</li>
+</ul>
+</li>
+</ul>
+</header>
+ 
+ 
+<aside id="sidebar_left" class="nano nano-light affix">
+ 
+<div class="sidebar-left-content nano-content">
+ 
+<header class="sidebar-header">
+ 
+<div class="sidebar-widget author-widget">
+<div class="media">
+<a class="media-left" href="#">
+<img src="admin_image/<?php echo $admin_details[0]["image"]; ?>" class="img-responsive">
+</a>
+<div class="media-body">
+<div class="media-links">
+<a href="#" class="sidebar-menu-toggle"></a> <a href="Logout.php">Logout</a>
+</div>
+<div class="media-author">  <?php  echo explode(" ",$admin_details[0]["full_name"])[0];  ?>  </div>
+</div>
+</div>
+</div>
+ 
+</header>
+ 
+ 
+<ul class="nav sidebar-menu">
+<li class="sidebar-label pt30">Menu</li>
+<li class="active">
+<a class="accordion-toggle <?php echo $a; ?>" href="#">
+<span class="fa fa-dashboard"></span>
+<span class="sidebar-title">Dashboard</span>
+<span class="caret"></span>
+<ul class="nav sub-nav">
+<li>
+<a href="add_listing_price.php">
+<span class="fa fa-file-text-o"></span>Add Listing Price</a>
+</li>
+<li>
+<a href="add_price_for_classified.php">
+<span class="fa fa-file-text-o"></span>Add Price</a>
+</li>
+
+</ul>
+</li>
+
+<li class="sidebar-label pt30">Tools</li>
+
+<li>
+<a class="accordion-toggle <?php echo $k; ?>" href="#">
+<span class="fa fa-wrench"></span>
+<span class="sidebar-title">General Items</span>
+<span class="caret"></span>
+</a>
+<ul class="nav sub-nav">
+<?php
+if(show_price_listingDb('general_item') !=""){
+?>
+<li class="sidebar-label pt30"><font color="yellow"> <?php echo show_price_listingDb('general_item');  ?> </font></li>
+<?php
+}
+?><li>
+<a href="add_general_item_cat.php">
+<span class="fa fa-file-text-o"></span>Add Category Sub Category</a>
+</li>
+<li>
+<a href="add_extra_field.php">
+<span class="fa fa-file-text-o"></span>Add Extra Field</a>
+</li>
+<li>
+<a href="update_category_extra_field.php">
+<span class="fa fa-file-text-o"></span>Update Category Extra Field</a>
+</li>
+
+<li>
+<a href="add_general_item.php">
+<span class="fa fa-file-text-o"></span>Add General Item</a>
+</li>
+<li>
+<a href="general_item_listing.php">
+<span class="fa fa-file-text-o"></span>General Item Listing</a>
+</li>
+<li>
+<a href="general_item_gallery.php">
+<span class="fa fa-file-text-o"></span>General Item Gallery</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a class="accordion-toggle <?php echo $l; ?>" href="#">
+<span class="fa fa-wrench"></span>
+<span class="sidebar-title">property</span>
+<span class="caret"></span>
+</a>
+<ul class="nav sub-nav">
+<?php
+if(show_price_listingDb('property') !=""){
+?>
+<li class="sidebar-label pt30"><font color="yellow"> <?php echo show_price_listingDb('property');  ?> </font></li>
+<?php
+}
+?>
+<li>
+<a href="add_property_category.php">
+<span class="fa fa-file-text-o"></span>Add Category Sub Category</a>
+</li>
+<li>
+<a href="add_property_extra_field.php">
+<span class="fa fa-file-text-o"></span>Add Extra Field</a>
+</li>
+<li>
+<a href="update_pro_cat_extra_field.php">
+<span class="fa fa-file-text-o"></span>Update Category Extra Field</a>
+</li>
+<li>
+<a href="add_property.php">
+<span class="fa fa-file-text-o"></span>Add Property</a>
+</li>
+<li>
+<a href="property_listing.php">
+<span class="fa fa-file-text-o"></span>Property Listing</a>
+</li>
+<li>
+<a href="property_gallery.php">
+<span class="fa fa-file-text-o"></span>Property Gallery</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a class="accordion-toggle <?php echo $m; ?>" href="#">
+<span class="fa fa-wrench"></span>
+<span class="sidebar-title">Job</span>
+<span class="caret"></span>
+</a>
+<ul class="nav sub-nav">
+<?php
+if(show_price_listingDb('job') !=""){
+?>
+<li class="sidebar-label pt30"><font color="yellow"> <?php echo show_price_listingDb('job');  ?> </font></li>
+<?php
+}
+?>
+<li>
+<a href="add_job_category.php">
+<span class="fa fa-file-text-o"></span>Add Category Sub Category</a>
+</li>
+<li>
+<a href="add_job_extra_field.php">
+<span class="fa fa-file-text-o"></span>Add Extra Field</a>
+</li>
+<li>
+<a href="update_job_cat_extra_field.php">
+<span class="fa fa-file-text-o"></span>Update Job Category Extra Field</a>
+</li>
+<li>
+<a href="add_job.php">
+<span class="fa fa-file-text-o"></span>Add Job</a>
+</li>
+<li>
+<a href="job_listing.php">
+<span class="fa fa-file-text-o"></span>Job Listing</a>
+</li>
+<li>
+<a href="job_gallery.php">
+<span class="fa fa-file-text-o"></span>Job Gallery</a>
+</li>
+<li>
+<a href="job_video_gallery.php">
+<span class="fa fa-file-text-o"></span>Video Gallery</a>
+</li>
+</ul>
+</li>
+
+
+<li>
+<a class="accordion-toggle <?php echo $n; ?>" href="#">
+<span class="fa fa-wrench"></span>
+<span class="sidebar-title">Car, Motorcycle & Boat</span>
+<span class="caret"></span>
+</a>
+<ul class="nav sub-nav">
+<?php
+if(show_price_listingDb('car') !=""){
+?>
+<li class="sidebar-label pt30"><font color="yellow"> <?php echo show_price_listingDb('car');  ?> </font></li>
+<?php
+}
+?>
+<li>
+<a href="add_car_category.php">
+<span class="fa fa-file-text-o"></span>Add Category Sub Category</a>
+</li>
+<li>
+<a href="add_car_extra_field.php">
+<span class="fa fa-file-text-o"></span>Add Extra Field</a>
+</li>
+<li>
+<a href="update_car_cat_extra_field.php">
+<span class="fa fa-file-text-o"></span>Update Job Category Extra Field</a>
+</li>
+<li>
+<a href="add_car_motorcycle.php">
+<span class="fa fa-file-text-o"></span>Add Car Motorcycle</a>
+</li>
+<li>
+<a href="car_motorcycle_listing.php">
+<span class="fa fa-file-text-o"></span>Car Motorcycle Listing</a>
+</li>
+<li>
+<a href="car_motorcycle_gallery.php">
+<span class="fa fa-file-text-o"></span>Car Motorcycle Gallery</a>
+</li>
+
+</ul>
+</li>
+
+
+
+
+<li>
+<a class="accordion-toggle <?php echo $g; ?>" href="#">
+<span class="fa fa-wrench"></span>
+<span class="sidebar-title">Add Features</span>
+<span class="caret"></span>
+</a>
+<ul class="nav sub-nav">
+<li>
+<a href="add_country.php">
+<span class="fa fa-file-text-o"></span>Add Country City</a>
+</li>
+</ul>
+</li>
+<li>
+<a class="accordion-toggle <?php echo $h; ?>" href="#">
+<span class="fa fa-cogs"></span>
+<span class="sidebar-title">Footer &nbsp Settings</span>
+<span class="caret"></span>
+</a>
+<ul class="nav sub-nav">
+<li>
+<a href="add_faq.php">
+<span class="fa fa-file-text-o"></span> Add FAQ </a>
+</li>
+<li>
+<a href="terms_services.php">
+<span class="fa fa-file-text-o"></span> Add Terms & Services </a>
+</li>
+<li>
+<a href="privacy_policy.php">
+<span class="fa fa-file-text-o"></span> Add Privacy Policy </a>
+</li>
+<li>
+<a href="about_us.php">
+<span class="fa fa-file-text-o"></span>Add About Us</a>
+</li>
+<li>
+<a href="contact_us.php">
+<span class="fa fa-file-text-o"></span>Add Contact Us</a>
+</li>
+</ul>
+
+<a class="accordion-toggle <?php echo $j; ?>" href="#">
+<span class="fa fa-cogs"></span>
+<span class="sidebar-title">Site &nbsp Settings</span>
+<span class="caret"></span>
+</a>
+<ul class="nav sub-nav">
+
+<li>
+<a href="siteSettings.php">
+<span class="fa fa-file-text-o"></span>Client Site Settings</a>
+</li>
+<li>
+<a href="admin_settings.php">
+<span class="fa fa-file-text-o"></span>Admin Site Settings</a>
+</li>
+</ul>
+
+</li>
+<li>
+</li>
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+</ul>
+
+ 
+</div>
+ 
+</aside>
+ 
+ 

@@ -1,0 +1,274 @@
+.item-design {
+	background-color: #f5f5f5;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.place-div {
+	width: 41%;
+	float: left;
+	display: inline;
+}
+
+.item-height {
+	height: 61px;
+}
+
+.label-margins {
+	margin-top: 9px;
+}
+
+.gen-btn {
+	color: #fff;
+	font-size: 21px !important;
+	padding: 15px 12px !important;
+	width: 244px !important;
+	text-align: center;
+}
+
+.p-details {
+	border-bottom: none !important;
+	font-size: 16px !important;
+}
+
+.text-details {
+	text-align: right;
+	font-size: 19px;
+}
+
+.border-price {
+	width: 24% !important;
+	margin-right: 0px;
+	padding: 2px 25px;
+	border: 1px solid #ccc;
+}
+
+.p-details-center {
+	text-align: center;
+	line-height: 20px;
+	font-size: 16px;
+}
+
+.p-line-h {
+	/*line-height: 40px;*/
+}
+
+.singular-classified .classified_info-right .classified-info p span {
+	width: 55% !important;
+}
+
+.singular-classified .classified_info-right .classified-info p label {
+	width: 40% !important;
+}
+
+
+/*Tab panels qa*/
+
+#qa_area {
+	background: #f5f5f5;
+	width: 100%;
+	height: 450px;
+	overflow-y: scroll;
+	padding: 15px 0px;
+}
+
+.single_qa {
+	width: 95%;
+	margin: 15px auto;
+}
+
+.question-p {
+	color: #333;
+	font-size: 15px;
+	margin: 15px 0px;
+}
+
+.q-tag {
+	color: #fff;
+	font-weight: 900;
+	padding: 3px;
+	background-color: #fbcc48;
+	text-align: center;
+}
+
+.q-text {
+	font-weight: bold;
+}
+
+.a-tag {
+	font-weight: 900;
+	padding: 3px;
+	text-align: center;
+}
+
+.q-who {
+	font-size: 12px;
+	margin-left: 25px;
+	font-weight: normal;
+}
+
+.a-who {
+	font-size: 12px;
+	margin-left: 9px;
+}
+
+.ask {
+	width: 100%;
+	margin: auto;
+}
+
+.text-question {
+	min-height: 125px !important;
+	display: block;
+	margin: 15px 0px;
+}
+
+.btn-q {
+	font-weight: 400;
+	font-size: 18px;
+	padding: 10px 24px 11px;
+	background: #fbcc48;
+	color: #FFF;
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+	font-family: 'Ubuntu', sans-serif;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.para-qa {
+	margin-top: 15px;
+}
+
+.para-note {
+	font-size: 12px;
+}
+
+#put-a {
+	color: #fbcc48;
+	margin-left: 25px;
+	cursor: pointer;
+}
+
+#show-a {
+	color: #fbcc48;
+	margin-left: 25px;
+}
+
+.indicate-number {
+	color: #fff;
+	background: red;
+	font-size: 12px;
+	padding: 3px 5px;
+	border-radius: 2px;
+}
+
+.under-offer {
+	text-align: center;
+	font-size: 21px;
+	font-weight: 400;
+}
+
+.feedback-button {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	
+}
+.feedback-button button{
+	background-color: #E4E4E4;
+	color: black;
+}
+
+.feedback-emoji-container {
+	position: relative;
+}
+
+.feedback-emoji-container span,
+.feedback-emoji-container input {
+	position: relative;
+	top: -6px;
+}
+
+.feedback-emoji {
+	width: 25px;
+}
+.feedback-count{
+	padding-bottom: 10px;
+}
+.feedback-count span{
+	top: -12px;
+}
+.feedback-detail{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.different {
+    background: wheat;
+    margin-bottom: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.different #image {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.packageblock .packagelistitems .panel-default {
+    padding-right: 0;
+}
+
+#feature_branding{
+    padding: 24px;
+}
+
+.temp-logo {
+    width: 800px;
+    height: 200px;
+    border: 2px dashed #ddd;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.temp-banner {
+    width: 800px;
+    height: 80px;
+    border: 2px dashed #ddd;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    background: #ff8040;
+    border-color: #ff8040;
+    cursor: pointer;
+}
+.fileUpload input.textfield {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+@media screen and (max-width: 768px){
+.different #image {
+    width: 50%;
+    margin: 0 auto;
+}
+}

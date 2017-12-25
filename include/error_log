@@ -1,0 +1,16 @@
+[12-Jun-2017 04:09:53 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 04:09:53 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 04:09:54 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 04:09:54 UTC] PHP Fatal error:  Call to undefined function get_site_settings() in /home/ajay/public_html/include/header.php on line 14
+[12-Jun-2017 04:44:27 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 04:44:31 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 04:44:31 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 04:44:32 UTC] PHP Fatal error:  Call to undefined function get_site_settings() in /home/ajay/public_html/include/header.php on line 14
+[12-Jun-2017 04:56:46 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 04:56:50 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 04:56:51 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 04:56:51 UTC] PHP Fatal error:  Call to undefined function get_site_settings() in /home/ajay/public_html/include/header.php on line 14
+[12-Jun-2017 05:08:01 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 05:08:01 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 05:08:02 UTC] PHP Fatal error:  Call to undefined function get_site_setting() in /home/ajay/public_html/include/footer_main.php on line 0
+[12-Jun-2017 05:08:02 UTC] PHP Fatal error:  Call to undefined function get_site_settings() in /home/ajay/public_html/include/header.php on line 14
